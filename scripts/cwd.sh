@@ -13,7 +13,7 @@ getPaneDir() {
 }
 
 main() {
-  path=$(getPaneDir)
+  path=$(basename "$(getPaneDir)")
 
   # change '/home/user' to '~'
   cwd="${path/"$HOME"/~}"
